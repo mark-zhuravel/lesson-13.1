@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol class="border" id="square" viewBox="0 0 200 200">
+            <rect x="10" y="20" width="150px" height="150px"/>
+        </symbol>
+        <symbol class="border" id="rectangle" viewBox="0 0 200 200">
+            <rect x="10" y="40" width="200px" height="120px"/>
+        </symbol>
+        <symbol class="border" id="circle" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="75"/>
+        </symbol>
+        <symbol class="border" id="ellipse" viewBox="0 0 200 200">
+            <ellipse cx="100" cy="100" rx="100" ry="60"/>
+        </symbol>
+      </svg>
+
+    <svg><use xlink:href="#square"></use></svg>
+    <svg><use xlink:href="#rectangle"></use></svg>
+    <svg><use xlink:href="#circle"></use></svg>
+    <svg><use xlink:href="#ellipse"></use></svg>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.border {
+    stroke-width: 5px;
+}
+
+#square {
+    fill: crimson;
+    stroke: black;
+}
+
+#rectangle {
+    fill: gold;
+    stroke: blue;
+}
+
+#circle {
+    fill: lightgreen;
+    stroke: purple;
+}
+
+#ellipse {
+    fill: blue;
+    stroke: orange;
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        stroke: orange;
+        fill: blue;
+    }
+    25% {
+        stroke: greenyellow;
+        fill: brown
+    }
+    50% {
+        stroke: blue;
+        fill: purple;
+    }
+    75% {
+        stroke: darkmagenta;
+        fill: red;
+    }
+    100% {
+        stroke: orange;
+        fill: blue;
+    }
+}
